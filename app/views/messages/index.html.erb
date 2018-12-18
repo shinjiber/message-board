@@ -6,7 +6,7 @@
   <% @messages.each do |message| %>
   
   <li>
-    <%= link_to(message.id, "/messages/:id") %>
+    <%= link_to message.id, message %>
     <%= message.content %>
   </li>
   
@@ -15,4 +15,4 @@
 
 </ul>
 
-<%= link_to '新規メッセージの投稿', new_message_path %>
+<%= link_to "新規メッセージの投稿", new_message_path %>
